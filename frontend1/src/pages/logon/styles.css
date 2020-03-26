@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css?family=Muli:400,700&display=swap');
+
+.logon-container{
+    width: 100%;
+    height: 100vh;
+}
+
+.logon-container .title h1{
+    font-size: 50px;
+    font-weight: bold;
+    font-family: Muli, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #0042C0;
+    margin-top: 50px;
+}
+
+.logon-container .title p{
+    font-size: 20px;
+    font-family: Roboto, sans-serif;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: #17222D;
+    margin-top: 10px;
+}
+
+.logon-container .logon {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.logon-container .logon img {
+    margin-right: 80px;
+}
