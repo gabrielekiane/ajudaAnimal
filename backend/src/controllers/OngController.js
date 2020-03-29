@@ -1,6 +1,8 @@
 const crypto = require('crypto');
 const connection = require('../database/connection');
 
+const generateUniqueId = require('../utils/generateUniqueId');
+
 module.exports = {
 
     async index(request, response) {
@@ -13,7 +15,7 @@ module.exports = {
         const {name, email, whatsapp, city, uf} = request.body; //aqui acessamos os dados do corpo da requisicao
 
         //para gerar o id usaremos strings randomicas com o pacote crypto do nodeJS
-        const id = crypto.randomBytes(4).toString('HEX');
+        const id = generateUniqueId();
         
         // fazer a conexao com o banco || await fara com q qnd o node chegar nesse codigo ele ira aguardar o codigo finalizar para continuar
         await connection('ongs').insert({
